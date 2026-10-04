@@ -1,0 +1,24 @@
+# .gitignore — university chapters pipeline
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.env.*
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Lake output (generated; not committed)
+lake/bronze/
+lake/silver/
+lake/gold/
+lake/quarantine/
+
+# Spark local dirs
+metastore_db/
+derby.log
+spark-warehouse/

@@ -1,0 +1,55 @@
+[
+  {
+    "__fixture_note": "DQ-Q1 trigger — longitude is out of range (999). Must land in quarantine, never in Gold.",
+    "attributes": {
+      "OBJECTID": 99901,
+      "ChapterID": "XX-BAD1",
+      "University_Chapter": "Bad Coordinates University",
+      "City": "Nowhere",
+      "State": "CA"
+    },
+    "geometry": {
+      "x": 999.0,
+      "y": 999.0
+    }
+  },
+  {
+    "__fixture_note": "DQ-W1 trigger — city is null. Must land in Silver/Gold with dq_status=WARNING.",
+    "attributes": {
+      "OBJECTID": 99902,
+      "ChapterID": "CA-WARN1",
+      "University_Chapter": "No City University",
+      "City": null,
+      "State": "CA"
+    },
+    "geometry": {
+      "x": -118.2437,
+      "y": 34.0522
+    }
+  },
+  {
+    "__fixture_note": "DQ-W1 trigger — city is the literal UNKNOWN. Must land in Silver/Gold with dq_status=WARNING.",
+    "attributes": {
+      "OBJECTID": 99903,
+      "ChapterID": "CA-WARN2",
+      "University_Chapter": "Unknown City University",
+      "City": "UNKNOWN",
+      "State": "CA"
+    },
+    "geometry": {
+      "x": -122.4194,
+      "y": 37.7749
+    }
+  },
+  {
+    "__fixture_note": "DQ-Q1 trigger — geometry is entirely missing (null). Must land in quarantine.",
+    "attributes": {
+      "OBJECTID": 99904,
+      "ChapterID": "XX-BAD2",
+      "University_Chapter": "No Geometry University",
+      "City": "Portland",
+      "State": "OR"
+    },
+    "geometry": null
+  }
+]
